@@ -67,7 +67,7 @@ created a "Backend" named directory and a json file inside, where all user data 
     - also used "useNavigate()" hook so when user click on button he should automatically redirected to the "users" page 
 
 
-      ========= commit =========
+      ========= Final commit =========
 
 
       - now at Users component , i have to provide functionality to the delete button as well.
@@ -80,6 +80,6 @@ created a "Backend" named directory and a json file inside, where all user data 
       - thats how now useEffect will execute both the time, when i will call that from other component, as wel when i call from "deleteUser" function. coz dependency state value is changin on each call
 
 
-
+      ===== now my app is fully functioning and performing CRUD (Create, read, Update, delete) operstions flawlessly
 
      
