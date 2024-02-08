@@ -32,10 +32,16 @@ created a "Backend" named directory and a json file inside, where all user data 
 
 
     created Users component, where all users data will be visible.
-    - using "axios.get()" method i fetching  the data from json-server.
+    - using "axios.get()" method inside useEffect() hook i fetching  the data from json-server.
+    - using useEffect so whenever "users" component render, it should have updated data
     - and storing the array data of incoming json into "users" state.
     - i have to show all the object data into UI so applying "map" method so can iterate over each data.
     - also used "useNavigate()" hook in CreateUser component so when user click submit button it should automatically render "Users" component to the user.
     
 
+    ========= commit =========
 
+
+    binded Edit button with  Link so when user click on edit button so user should redirected to "EditUser" component. and AT EditUser component render we have to get only that perticular user for which button is pressed.
+    - so to achaive it we will pass ID of that user through The url, which we using to redirect  after ":" any value written is treated as param value, which can be extracted at end point
+     
