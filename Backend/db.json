@@ -1,9 +1,10 @@
 {
-    "employees": [
-      {
-        "id": "9a2e",
-        "empName": "a1",
-        "empSalary": "078",
-        "empCompany": "sd"
-      }
-    ]}
+  "employees": [
+    {
+      "id": "4e67",
+      "name": "lakha",
+      "salary": "022",
+      "company": "asda"
+    }
+  ]
+}

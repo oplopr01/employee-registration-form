@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import style from "../home.module.css"
+import axios from 'axios'
 
 const CreateUser = () => {
     let [name, setName] = useState("")
@@ -7,8 +8,16 @@ const CreateUser = () => {
     let [company, setCompany] = useState("")
 
     let formHandler= (e)=>{
+        
+        let payload = {
+            name:name,
+            salary:salary,
+            company: company
+        }
         e.preventDefault()
-        console.log(name, salary, company);
+
+        axios.post("http://localhost:4502/employees", payload)
+        .then(()=>console.log("succses"))
     }
 
   return (
