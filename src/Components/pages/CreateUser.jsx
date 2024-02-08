@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import style from "../home.module.css"
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const CreateUser = () => {
     let [name, setName] = useState("")
     let [salary, setSalary] = useState(0)
     let [company, setCompany] = useState("")
+    let navigate = useNavigate()
 
     let formHandler= (e)=>{
         
@@ -18,6 +20,8 @@ const CreateUser = () => {
 
         axios.post("http://localhost:4502/employees", payload)
         .then(()=>console.log("succses"))
+
+        navigate("/users")
     }
 
   return (

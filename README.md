@@ -26,3 +26,16 @@ created a "Backend" named directory and a json file inside, where all user data 
   axios takes two argument 1st--> URL where we have to store, 2nd-->  which data needs to store (mostly object formate)
 
   i am putting this axios code inside "formHandler" method, this method will be execute when onclick event accure on button
+
+
+    ========= commit =========
+
+
+    created Users component, where all users data will be visible.
+    - using "axios.get()" method i fetching  the data from json-server.
+    - and storing the array data of incoming json into "users" state.
+    - i have to show all the object data into UI so applying "map" method so can iterate over each data.
+    - also used "useNavigate()" hook in CreateUser component so when user click submit button it should automatically render "Users" component to the user.
+    
+
+
