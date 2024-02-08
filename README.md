@@ -45,3 +45,22 @@ created a "Backend" named directory and a json file inside, where all user data 
     binded Edit button with  Link so when user click on edit button so user should redirected to "EditUser" component. and AT EditUser component render we have to get only that perticular user for which button is pressed.
     - so to achaive it we will pass ID of that user through The url, which we using to redirect  after ":" any value written is treated as param value, which can be extracted at end point
      
+
+     ========= commit =========
+
+
+    inside "EditUser" component created a form which will be returened by this component. 
+    - fetching data from server using axios.get() method, where URL will be having ID specific to user.
+    - this ID is extracted from Link using "useParams()" component. and stored i variable
+    - in the successfully fetching i am setting state values to the incoming information using useState() hook
+    - and these value will be reflacted to the form input fields, by using controlled form technique.
+  
+
+
+      ========= commit =========
+
+
+
+      
+
+     

@@ -23,7 +23,7 @@ const Users = () => {
                 <h1>Name: {e.name}</h1>
                 <h1>Salaray: {e.salary} </h1>
                 <h1>Company: {e.company} </h1>
-                <button><Link to={`/edit-user/:${ID}`}>Edit</Link></button>
+                <button><Link to={`/edit-user/${ID}`}>Edit</Link></button>
                 <button>Delete</button>
                 <br />
                 <hr />
