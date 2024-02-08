@@ -1,28 +1,16 @@
 {
   "employees": [
     {
-      "id": "4e67",
-      "name": "lakha",
-      "salary": "022",
-      "company": "asda"
+      "name": "ww33",
+      "salary": 0,
+      "company": "",
+      "id": "3bdf"
     },
     {
-      "id": "2f43",
-      "name": "aa",
-      "salary": "02344",
-      "company": "wrer"
-    },
-    {
-      "id": "e398",
-      "name": "sefs",
-      "salary": "0666",
-      "company": "eeeeeeeeee"
-    },
-    {
-      "id": "4630",
-      "name": "w3rw",
-      "salary": "0555",
-      "company": "ee"
+      "id": "62c2",
+      "name": "rrr",
+      "salary": 0,
+      "company": ""
     }
   ]
 }

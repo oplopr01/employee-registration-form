@@ -1,8 +1,9 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 const EditUser = () => {
+    let navigate = useNavigate()
     let userID = useParams()
     let [name, setName]= useState("")
     let [salary, setSalary] = useState(0)
@@ -17,6 +18,18 @@ const EditUser = () => {
         })
     },[])
 
+    let formHandler =(e)=>{
+        let payload = {
+            name:name,
+            salary:salary,
+            company:company
+        }
+        axios.put(`http://localhost:4502/employees/${userID.ID}`, payload)
+        .then(()=>console.log("succses"))
+
+        navigate("/users")
+
+    }
 
 
 
@@ -29,7 +42,7 @@ const EditUser = () => {
         <input type="text" value={salary} onChange={(e)=>setSalary(e.target.value)} />
         <label htmlFor="">company</label>
         <input type="text" value={company} onChange={(e)=>setCompany(e.target.value)} />
-        <button>Submit</button>
+        <button onClick={()=>{formHandler()}}>Submit</button>
     
     </div>
   )

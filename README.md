@@ -60,7 +60,26 @@ created a "Backend" named directory and a json file inside, where all user data 
       ========= commit =========
 
 
+    inside "EditUser" component created a function "formHandler" which will be executed onClicking of submit button after updating the data.
+    - this method is responsibel to make update on servers data, using 
+    "axios.put()" method
+    - put() method accepts two arguments, 1st --> link of the server entity, 2nd --> payload which has to be replaced.
+    - also used "useNavigate()" hook so when user click on button he should automatically redirected to the "users" page 
 
-      
+
+      ========= commit =========
+
+
+      - now at Users component , i have to provide functionality to the delete button as well.
+      - to do so i am creating a method "deleteUser" which will be trigered on the pressing of edit buton
+      - inside using "axios.delete()" method and passing the specific user URl,
+      - now if i deleted the user so that user details should be removed from ui .
+      - thats why provided "dependency -state" to the useeffect, when edit will be clicked, state will be changed using "set" method.
+      - now if i do like that then the problem will come on rendering at createUser functionality, means if now i try to rerender "Users" component aftre createUser work done, that time useEffect will not execute again because dependency value is not changing
+      - so to overcome that again setting dependency value to previous value using set method
+      - thats how now useEffect will execute both the time, when i will call that from other component, as wel when i call from "deleteUser" function. coz dependency state value is changin on each call
+
+
+
 
      
